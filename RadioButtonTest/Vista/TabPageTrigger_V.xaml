@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RadioButtonTest.Vista.TabPageTrigger_V">
+    <Grid RowDefinitions="180,*"
+          BackgroundColor="White">
+        <StackLayout HeightRequest="150">
+            <Label Text="Menú" TextColor="Black" FontSize="Large"/>
+            <Label Text="Seleccione una categoria y desplegara la cantidad de platos" TextColor="Black" FontSize="Body"/>
+            <CollectionView
+                ItemsSource="{Binding ListaCategorias}"
+                x:Name="lstCategorias">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout 
+                        ItemSpacing="5"
+                        Orientation="Horizontal"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Frame
+                                Margin="0,5,5,5"
+                                Padding="8"
+                                CornerRadius="34"
+                                HeightRequest="50"
+                                WidthRequest="130"
+                                BackgroundColor="Brown"
+                                VerticalOptions="Center">
+                                <Grid ColumnDefinitions="auto, *"
+                                      RowSpacing="0"
+                                      VerticalOptions="Center">
+                                    <BoxView BackgroundColor="White"
+                                             CornerRadius="25"
+                                             HeightRequest="50"
+                                             WidthRequest="80"/>
+                                    <Label Text="{Binding Descripcion}"
+                                           TextColor="Black"
+                                           HorizontalOptions="Center"
+                                           FontSize="16"
+                                           VerticalOptions="CenterAndExpand"/>
+                                    <StackLayout Grid.Column="1"
+                                                 VerticalOptions="Center">
+                                        <Label Text="{Binding Cantidad}"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                </Grid>
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.SeleccionarCommand, Source={x:Reference lstCategorias}}"
+                                                          CommandParameter="{Binding .}"/>
+                                </Frame.GestureRecognizers>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+        
+        <StackLayout Grid.Row="1">
+            <!--<Label Text="Lista de Platos" TextColor="Black" FontSize="Medium"/>-->
+            <CollectionView
+                ItemsSource="{Binding ListaPlatos}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout 
+                        Orientation="Vertical"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Frame
+                                Margin="8"
+                                Padding="8"
+                                CornerRadius="20"
+                                HeightRequest="50"
+                                WidthRequest="130"
+                                BackgroundColor="Aqua">
+                                <Grid ColumnDefinitions="auto, *"
+                                      RowSpacing="0"
+                                      VerticalOptions="Center">
+                                    <BoxView BackgroundColor="White"
+                                             CornerRadius="25"
+                                             HeightRequest="50"
+                                             WidthRequest="80"/>
+                                    <Label Text="{Binding Descripcion}"
+                                           TextColor="Black"
+                                           HorizontalOptions="Center"
+                                           FontSize="16"
+                                           VerticalOptions="CenterAndExpand"/>
+                                    <StackLayout Grid.Column="1"
+                                                 VerticalOptions="Center">
+                                        <Label Text="{Binding IdCategoria}"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"/>
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </Grid>
+</ContentPage>

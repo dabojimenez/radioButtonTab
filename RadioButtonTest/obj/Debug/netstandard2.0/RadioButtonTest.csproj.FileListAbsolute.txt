@@ -1,0 +1,16 @@
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\bin\Debug\netstandard2.0\RadioButtonTest.deps.json
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\bin\Debug\netstandard2.0\RadioButtonTest.dll
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\bin\Debug\netstandard2.0\RadioButtonTest.pdb
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\obj\Debug\netstandard2.0\RadioButtonTest.csproj.AssemblyReference.cache
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\obj\Debug\netstandard2.0\RadioButtonTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\obj\Debug\netstandard2.0\Vista\RadioButton_V.xaml.g.cs
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\obj\Debug\netstandard2.0\RadioButtonTest.AssemblyInfoInputs.cache
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\obj\Debug\netstandard2.0\RadioButtonTest.AssemblyInfo.cs
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\obj\Debug\netstandard2.0\RadioButtonTest.csproj.CoreCompileInputs.cache
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\obj\Debug\netstandard2.0\RadioButtonTest.dll
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\obj\Debug\netstandard2.0\refint\RadioButtonTest.dll
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\obj\Debug\netstandard2.0\RadioButtonTest.pdb
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\obj\Debug\netstandard2.0\ref\RadioButtonTest.dll
+C:\Users\David\source\xamarin\RadioButtonTest\RadioButtonTest\obj\Debug\netstandard2.0\Vista\TabPageTrigger_V.xaml.g.cs

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RadioButtonTest.Vista.RadioButton_V">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <StackLayout Orientation="Horizontal" RadioButtonGroup.GroupName="time">
+                <RadioButton Content="One Year" IsChecked="{Binding YearChecked, Mode=TwoWay}"/>
+                <RadioButton Content="One Month" IsChecked="{Binding MonthChecked, Mode=TwoWay}"/>
+                <RadioButton Content="One Week" IsChecked="{Binding WeekChecked, Mode=TwoWay}"/>
+            </StackLayout>
+            <Label Text="Total is"/>
+            <Button Text="Calcular" Command="{Binding CalcularCommand}"/>
+            <Label Text="{Binding Total}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
